@@ -93,6 +93,8 @@ public class Ejercicio6 {
                         op2=Integer.parseInt(br.readLine());
                         switch(op2){
                             case 1:
+                                dat.factura(user);
+                                
                                 break;
                             case 2 :
                                 do{
