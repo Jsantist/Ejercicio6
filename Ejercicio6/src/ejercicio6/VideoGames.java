@@ -8,6 +8,6 @@
  *
  * @author MICHELLE
  */
-public interface Tel {
-    public void TomarLlamada();
+public interface VideoGames {
+    public void Jugar();
 }

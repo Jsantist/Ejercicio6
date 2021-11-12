@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 /**
  *
  * @author Telus
@@ -24,6 +25,7 @@ public class Ejercicio6 {
         File publicaciones;
         Integer op1=0,op2=0,op3=0;
         boolean finalizar= false;
+        
         
         
         Archivo = new File("usuarios.txt");

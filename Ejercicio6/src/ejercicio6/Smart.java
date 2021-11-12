@@ -8,6 +8,7 @@
  *
  * @author MICHELLE
  */
-public interface Tel {
-    public void TomarLlamada();
+public interface Smart {
+    public void NavegarInternet();
+    public void ReproducirVideo();
 }

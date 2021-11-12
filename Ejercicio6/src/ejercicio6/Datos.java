@@ -95,4 +95,35 @@ public class Datos {
         escribir.close();
     }
     
+    public void desplegar(File Posts) throws IOException{
+        String caracter="";
+        
+        leer = new FileReader(Posts);
+        almacenamiento = new BufferedReader(leer);
+        try{
+        while (caracter!= null){
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            
+        }
+        }catch(IOException ex ){
+            System.out.println(ex);
+        }
+        
+    }
+    
 }
