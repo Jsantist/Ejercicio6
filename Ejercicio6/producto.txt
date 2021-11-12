@@ -19,7 +19,7 @@ Motorola
 7/6/2010
 Independiente
 ---------------------------
-Cámara
+Camara
 Q1000
 G400
 Canon
@@ -54,5 +54,12 @@ Apple
 8/5/2019
 Independiente
 -------------------
+Tablet
+Q4000
+Galaxy tab S6
+Samsung
+7/6/2019
+Independiente
+--------------------
 
 

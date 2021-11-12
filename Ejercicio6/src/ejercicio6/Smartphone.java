@@ -1,4 +1,4 @@
-
+package ejercicio6;
 
 
 /*
@@ -15,6 +15,11 @@
 import java.util.Scanner;
 public class Smartphone implements Foto, Tel,Smart{
     Scanner leer = new Scanner(System.in);
+
+    public Smartphone() {
+    }
+    
+    
 
    @Override
     public void TomarFoto() {

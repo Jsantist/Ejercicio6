@@ -24,6 +24,53 @@ public class Datos {
     PrintWriter linea;
     BufferedReader almacenamiento;
     
+    
+    public boolean buscar(File usuarios, String producto)throws IOException{
+        
+        String prod= producto;
+        
+        boolean existe = false;
+        String p="",caracter="";
+        int n =0 ;
+        usuarios = new File("usuarios.txt");
+        leer = new FileReader(usuarios);
+        almacenamiento = new BufferedReader(leer);
+        
+        while (caracter!= null){
+            caracter=almacenamiento.readLine();
+            p=caracter;
+            if (p == null ? prod == null : p.equals(prod)){
+                n=n+1;
+                System.out.println("el producto seleccionado es :"+p);
+            }
+            
+            if (n>0){
+                caracter=almacenamiento.readLine();
+                System.out.println("su precio es: "+caracter);
+                caracter=almacenamiento.readLine();
+                System.out.println("Su modelo es :"+caracter);
+                caracter=almacenamiento.readLine();
+                System.out.println("Su marca es: "+caracter);
+                caracter=almacenamiento.readLine();
+                System.out.println("Su fecha de fabricación es: "+caracter);
+                caracter=almacenamiento.readLine();
+                System.out.println("Su marcador AR es: "+caracter);
+                caracter=almacenamiento.readLine();
+                System.out.println(caracter);
+                
+            
+            }
+            
+            
+        }
+        
+        
+        
+        almacenamiento.close();
+        leer.close();
+      return existe;
+    }
+    
     public boolean verificar(File usuarios, String usuario, String contraseña)throws IOException{
         
         String us= usuario;
@@ -102,23 +149,22 @@ public class Datos {
         almacenamiento = new BufferedReader(leer);
         try{
         while (caracter!= null){
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
-            caracter=almacenamiento.readLine();
-            System.out.println(caracter);
             
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+            caracter=almacenamiento.readLine();
+            System.out.println(caracter);
+          
         }
         }catch(IOException ex ){
             System.out.println(ex);

@@ -1,4 +1,4 @@
-
+package ejercicio6;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
